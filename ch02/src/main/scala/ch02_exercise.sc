@@ -2,21 +2,20 @@ import java.lang.Character.UnicodeBlock
 //************************************************/
 //                    Exc 1
 //************************************************/
-//signum(12)
-//signum(0)
-//signum(-1233)
-//
-//def signum(x: Int) = {
-//  if (x < 0 ) -1
-//  else if (x > 0) 1
-//  else 0
-//}
+println(signum(12))
+println(signum(0))
+println(signum(-1233))
+def signum(x: Int) = {
+  if (x < 0 ) -1
+  else if (x > 0) 1
+  else 0
+}
 
 
 //************************************************/
 //                    Exc 2
 //************************************************/
-// {}   // value = () and type = Unit
+{}   // value = () and type = Unit
 
 //************************************************/
 //                    Exc 3
@@ -35,18 +34,17 @@ x = y = 2
 //************************************************/
 // Convert to scala :
 // for (int i = 10; i >= 0; i--) System.out.println(i)
-//for (i <- 10 to (0, -1)) println(i)
+for (i <- 10 to (0, -1)) println(i)
 
 //************************************************/
 //                    Exc 5
 //************************************************/
 //  Write a procedure countdown(n : Int) that prints the
 // numbers from n to 0?
-//def countdown(n : Int): Unit = {
-//  for(i <- n to (0, -1)) println(i)
-//}
-//countdown(10)
-
+def countdown(n : Int): Unit = {
+  for(i <- n to (0, -1)) println(i)
+}
+countdown(10)
 //************************************************/
 //                    Exc 6
 //************************************************/
@@ -66,8 +64,8 @@ println (res + "L")
 // Solve the preceding exercise without writing 
 // a loop.
 //************************************************/
-val res7 = "Hello".foldLeft(1L)((b,a) => b*a)
-println(res7 + "L")
+val result = "Hello".foldLeft(1L)((b,a) => b*a)
+println(result + "L")
 //************************************************/
 // Exc 8
 //************************************************/
@@ -77,7 +75,6 @@ def product(s: String): Long = {
     for(c <- s) res8 *= c.toLong
     res8
 }
-
 //************************************************/
 // Exc 9
 //************************************************/
